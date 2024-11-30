@@ -39,3 +39,8 @@ generateBtn.addEventListener('click', () => {
         generateBtn.disabled = false; // Reabilita o botão
     }, 1000); // Atraso de 1 segundo (1000 ms)
 });
+
+// Restaura o texto do botão para "Gerar QR Code" ao focar no input
+textInput.addEventListener('focus', () => {
+    generateBtn.innerText = 'Gerar QR Code';
+});
